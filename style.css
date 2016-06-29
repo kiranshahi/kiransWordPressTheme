@@ -140,3 +140,20 @@ div.text-column {
 	width: 70%;
 	float: right;
 }
+
+/* Info Box Style */
+div.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #EEE;
+}
+
+div.info-box h4 {
+	margin-bottom: 6px;
+}
+
+div.info-box p {
+	font-size: 85%;
+}
