@@ -31,3 +31,11 @@ function get_top_ancestor_id() {
 	return $post->ID;
 
 }
+
+
+// Customize excerpt word count length
+function custom_excerpt_length() {
+	return 25;
+}
+
+add_filter('excerpt_length', 'custom_excerpt_length');
