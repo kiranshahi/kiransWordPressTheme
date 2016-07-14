@@ -6,12 +6,6 @@ function kiransThemeResources() {
 
 add_action('wp_enqueue_scripts', 'kiransThemeResources');
 
-//Navigation Menus
-
-register_nav_menus(array(
-	'primary' => __( 'Primary Menu' ),
-	'footer'  => __( 'Footer Menu' ),
-	));
 
 //Get top ancestor
 function get_top_ancestor_id() {
@@ -39,3 +33,22 @@ function custom_excerpt_length() {
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+
+
+function kiransTheme() {
+
+	//Navigation Menus
+
+	register_nav_menus(array(
+		'primary' => __( 'Primary Menu' ),
+		'footer'  => __( 'Footer Menu' ),
+	));
+
+	//Add featured image support
+	add_theme_support('post-thumbnails');
+	add_image_size('small-thumbnails', 180, 120, true);
+	add_image_size('banner-image', 920, 210, true);
+}
+
+add_action('after_setup_theme','kiransTheme');
