@@ -22,6 +22,10 @@ p	{
 	line-height: 1.65em;
 }
 
+
+.clear {
+	clear: both;
+}
 /*	General Layout */
 
 
@@ -38,6 +42,48 @@ article.post {
 
 article.post:last-of-type {
 	border-bottom: none;
+}
+
+/* Aside style */
+article.post-aside,
+article.post-link {
+	font-size: 125%;
+	background-color: #FFF5CB;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+.mini-meta {
+	font-size: 68%;
+	margin: 0;
+	color: #777;
+}
+
+/*Link post format style*/
+article.post-link{
+	padding: 0;
+	background-color: #E0EBFF;
+}
+
+article.post-link a {
+	display: block;
+	padding: 20px;
+}
+
+/*Post format gallery Style*/
+article.post-gallery {
+	background-color: #222;
+	color: #FFF;
+	padding: 20px;
+}
+
+article.post-gallery h2	{
+	text-align: center;
+}
+
+article.post-gallery img {
+	border: none !important;
 }
 
 /* Header */
@@ -104,6 +150,45 @@ article.post:last-of-type {
 	font-weight: bold;
 	background-color: #006ec3;
 	color: #FFF;
+}
+
+/* Post Columns */
+
+.home-columns {
+	padding-top: 30px;
+}
+
+.one-half {
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+}
+
+.last {
+	margin-right: 0;
+}
+
+
+/* Main column */
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+/* Secondary column */
+.secondary-column {
+	width: 30%;
+	float: right;
+}
+
+
+/* Footer Widget Area*/
+
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	padding-right: 40px;
+	box-sizing: border-box;
 }
 
 /* Footer Menu */
